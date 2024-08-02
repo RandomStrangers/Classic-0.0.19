@@ -61,7 +61,7 @@ jobs:
       - uses: ./.github/actions/notify_success
         if: ${{ always() && steps.compile.outcome == 'success' }}
         with:
-          NOTIFY_MESSAGE: 'Successfully compiled 32 bit TRPClient Linux builds.'
+          NOTIFY_MESSAGE: 'Successfully compiled 32 bit Classic 0.0.1.9 Linux builds.'
           WEBHOOK_URL: '${{ secrets.WEBHOOK_URL }}'
 
 #============================================
